@@ -15,6 +15,6 @@ public class test {
 
         System.out.println(now(DateTimeZone.forOffsetHours(+1)));
 
-//        astring.replace(newString);
+//        string.replace(newString);
     }
 }

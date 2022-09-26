@@ -11,7 +11,6 @@ import org.crystal.atm.model.ClientContactInfo;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -67,14 +66,12 @@ public class AtmApp {
         client2.setFullName("fullName1");
         client2.setSurName("surname1");
         client2.getClientAccountDetailsList().put("s222s2s2d2sad2s", new ClientAccountDetails("AC000055515201", 999999955, formatter.format(date), "Debit"));
-        client2.getClientContactInfoList().add(new ClientContactInfo(new ArrayList<>(Arrays.asList("sr@dsd.eu")), new ArrayList<>(Arrays.asList("0625554455")), new ArrayList<>(Arrays.asList(new Address("al", "dr", "lgj.nr1")))));
+        client2.getClientContactInfoList().add(new ClientContactInfo(new ArrayList<>(List.of("sr@dsd.eu")), new ArrayList<>(List.of("0625554455")), new ArrayList<>(List.of(new Address("al", "dr", "lgj.nr1")))));
         clients.getClientsList().put(client1.getID(), client1);
         clients.getClientsList().put(client2.getID(), client2);
         System.out.println(clients.getClientsList());
 //        contains(clients.getClientsList().get(0),"bday");
-        clients.getClientsList().forEach((k, v) -> {
-            System.out.println("Key : " + k + " Value : " + v + "\n");
-        });
+        clients.getClientsList().forEach((k, v) -> System.out.println("Key : " + k + " Value : " + v + "\n"));
         ObjectMapper objectMapper = new ObjectMapper();
         String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(clients.getClientsList());
         System.out.println(json);

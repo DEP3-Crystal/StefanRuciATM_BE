@@ -5,30 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a61472-1cd0-4561-9f13-15531578d4a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/atm_manager/CardInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/ATMs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/validator/CardValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/io/DataInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/io/ReadDataFromDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/io/ReadDataFromFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d.iml" beforeDir="false" afterPath="$PROJECT_DIR$/d.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/controller/ATMController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/controller/ATMController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/AtmApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/AtmApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/atm_manager/CardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/atm_manager/CardInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/ATMs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/ATMs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/Clients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/CardDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/CardDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientAccountDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientContactInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientContactInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/validator/CardValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/validator/CardValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/AtmApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/AtmApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/controller/ATMController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/controller/ATMController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/dao/Clients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/dao/Clients.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/CardDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/CardDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientAccountDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientAccountDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientContactInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientContactInfo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +57,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }

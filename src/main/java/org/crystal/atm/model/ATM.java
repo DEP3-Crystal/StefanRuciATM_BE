@@ -10,7 +10,7 @@ public class ATM {
     private double atmAmount;
 
     public ATM(String atmNr, String atmName, String atmGPSCoordinates, double atmAmount) {
-        this.atmNr=atmNr;
+        this.atmNr = atmNr;
         this.atmName = atmName;
         this.atmGPSCoordinates = atmGPSCoordinates;
         this.atmAmount = atmAmount;

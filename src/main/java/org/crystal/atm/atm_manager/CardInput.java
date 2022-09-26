@@ -15,23 +15,25 @@ import java.util.Scanner;
 
 
 public class CardInput {
-    static Scanner input = new Scanner(System.in);
+    private Scanner input = new Scanner(System.in);
+    private Clients clients = new Clients();
 
-    public static void welcomeToATM(String atmID, String atmName) {
+
+    public  void welcomeToATM(String atmID, String atmName) {
         System.out.println("Welcome to " + atmName + " ATM Nr:" + atmID);
         cardEntering();
 
     }
 
 
-    public static void cardEntering() {
+    public  void cardEntering() {
 
         System.out.println("Enter your card nr");
         String cardNr = input.next();
-        if (CardValidator.containsCardNr(cardNr)) {
+        if (CardValidator.containsCardNr(cardNr, clients)) {
             System.out.println("Enter card pin");
             int pin = input.nextInt();
-            if (CardValidator.containsPin(cardNr, pin)) {
+            if (CardValidator.containsPin(cardNr, pin, clients)) {
                 startOperation(cardNr, pin);
             }
         } else {
@@ -39,8 +41,9 @@ public class CardInput {
         }
     }
 
-    private static void startOperation(String cardNr, int pin) {
-        HashMap<String, String> neededInfo = filterNeededInfo(cardNr, pin);
+    private  void startOperation(String cardNr, int pin) {
+
+        HashMap<String, String> neededInfo = filterNeededInfo(cardNr, pin, clients);
         System.out.println(greetings() + neededInfo.get("clientFullName"));
         atmMenu();
         int choose = input.nextInt();
@@ -54,17 +57,17 @@ public class CardInput {
                 }
                 break;
             case 2:
-                //todo :     "2 -> FOR cash deposits\n"
+                //todo :     "2 -> FOR cash deposits"
             case 3:
-                //todo :    "3 -> FOR withdraw\n"
+                //todo :    "3 -> FOR withdraw"
             case 4:
-                //todo :     "4 -> FOR transferring funds\n"
+                //todo :     "4 -> FOR transferring funds"
 
             case 5:
-                //todo :      "5 -> ATM PIN change\n"
+                //todo :      "5 -> ATM PIN change"
 
             case 6:
-                //todo :      "6 -> FOR SEEING OTHER TYPES  OF ACCOUNT INFO \n"
+                //todo :      "6 -> FOR SEEING OTHER TYPES  OF ACCOUNT INFO"
 
             case 0:
             default:
@@ -73,23 +76,25 @@ public class CardInput {
         }
     }
 
-    private static void goback() {
+    private  void goback() {
         System.out.println("Do you want to do other operation ? y/n ");
     }
 
-    private static void atmMenu() {
-        System.out.println("Press : \n" +
-                "1 -> FOR SEEING YOUR ACCOUNT AMOUNT\n" +
-                "2 -> FOR cash deposits\n" +
-                "3 -> FOR withdraw\n" +
-                "4 -> FOR transferring funds\n" +
-                "5 -> ATM PIN change\n" +
-                "6 -> FOR SEEING OTHER TYPES  OF ACCOUNT INFO \n" +
-                "0 -> FOR SEEING YOUR ACCOUNT AMOUNT\n" + " ");
+    private  void atmMenu() {
+        System.out.println("""
+                Press :\s
+                1 -> FOR SEEING YOUR ACCOUNT AMOUNT
+                2 -> FOR cash deposits
+                3 -> FOR withdraw
+                4 -> FOR transferring funds
+                5 -> ATM PIN change
+                6 -> FOR SEEING OTHER TYPES  OF ACCOUNT INFO\s
+                0 -> FOR SEEING YOUR ACCOUNT AMOUNT
+                \s""");
     }
 
-    private static HashMap<String, String> filterNeededInfo(String cardNr, int pin) {
-        for (Map.Entry<String, Client> stringClientEntry : Clients.getClientsList().entrySet()) {
+    private  HashMap<String, String> filterNeededInfo(String cardNr, int pin, Clients clients) {
+        for (Map.Entry<String, Client> stringClientEntry : clients.getClientsList().entrySet()) {
             for (Map.Entry<String, ClientAccountDetails> stringClientAccountDetailsEntry : stringClientEntry.getValue().getClientAccountDetailsList().entrySet()) {
                 for (CardDetails cardDetails : stringClientAccountDetailsEntry.getValue().getCardList()) {
                     if (Objects.equals(cardDetails.getCardNr(), cardNr) && cardDetails.getCardPin() == pin) {
@@ -102,14 +107,13 @@ public class CardInput {
                                 "cardPin", String.valueOf(cardDetails.getCardPin())
                         ));
                     }
-                    ;
                 }
             }
         }
         return null;
     }
 
-    private static String greetings() {
+    private  String greetings() {
 //        LocalTime morning = new LocalTime(6, 0, 0);
         LocalTime noon = new LocalTime(12, 0, 0);
         LocalTime evening = new LocalTime(18, 0, 0);
