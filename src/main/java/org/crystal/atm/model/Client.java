@@ -11,16 +11,17 @@ import java.util.Map;
 @Data
 public class Client {
 
-    private  String ID;
+    private String ID;
     private String name;
     private String surName;
     private String fullName;
     private char gender;
     private int age;
     private String birthday;
-private List<ClientContactInfo> clientContactInfoList =new ArrayList<>();
-private Map<String,ClientAccountDetails>  clientAccountDetailsList=new HashMap<>();
-    public Client(){
+    private List<ClientContactInfo> clientContactInfoList = new ArrayList<>();
+    private Map<String, ClientAccountDetails> clientAccountDetailsList = new HashMap<>();
+
+    public Client() {
 
     }
 

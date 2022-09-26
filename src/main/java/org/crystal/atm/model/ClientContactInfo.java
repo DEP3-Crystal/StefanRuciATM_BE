@@ -7,14 +7,16 @@ import java.util.List;
 
 @Data
 
-public class ClientContactInfo{
-    private List<String> emailList =new ArrayList<>();
-    private List<String> phoneNumberList =new ArrayList<>();
-       private List<Address> addressList =new ArrayList<>();
+public class ClientContactInfo {
+    private List<String> emailList = new ArrayList<>();
+    private List<String> phoneNumberList = new ArrayList<>();
+    private List<Address> addressList = new ArrayList<>();
 
-    public ClientContactInfo(){
+    public ClientContactInfo() {
 
-    };
+    }
+
+    ;
 
     public ClientContactInfo(List<String> emailList, List<String> phoneNumberList, List<Address> addressList) {
         this.emailList = emailList;

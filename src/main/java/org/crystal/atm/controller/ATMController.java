@@ -1,7 +1,7 @@
 package org.crystal.atm.controller;
 
-import org.crystal.atm.model.ClientAccountDetails;
 import org.crystal.atm.model.Client;
+import org.crystal.atm.model.ClientAccountDetails;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -22,10 +22,13 @@ public class ATMController {
         Date date = new Date();
         ClientAccountDetails clientAccountDetails = new ClientAccountDetails();
         Scanner in = new Scanner(System.in);
-        clientAccountDetails.setIBAN("AL" + clientAccountDetails.getId().substring(0, 5) + clientId.substring(0, 5));
+//        clientAccountDetails.setIBAN("AL" + clientAccountDetails.getId().substring(0, 5) + clientId.substring(0, 5));
         clientAccountDetails.setRegistrationDate(formatter.format(date));
-        System.out.println("Set account type : type one of bottom words:\n" +
-                "1 -> debit \n2 -> credit\n3 -> deposit  ");
+        System.out.println("""
+                Set account type : type one of bottom words:
+                1 -> debit\s
+                2 -> credit
+                3 -> deposit \s""");
         clientAccountDetails.setType(in.next().toLowerCase(Locale.ROOT));
         //todo : create registration form for register or adding and account details
         return clientAccountDetails;
@@ -33,7 +36,7 @@ public class ATMController {
 
     public static String genIBAN(String contryCode, String costumerId, String accountNumber) {
         Random random = new Random();
-        return contryCode+ "4800" + costumerId + accountNumber + random.nextInt(100000, 999999);
+        return contryCode + "4800" + costumerId + accountNumber + random.nextInt(100000, 999999);
     }
 
     public static int genId() {

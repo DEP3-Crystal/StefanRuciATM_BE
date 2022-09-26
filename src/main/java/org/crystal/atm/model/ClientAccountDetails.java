@@ -9,7 +9,7 @@ import java.util.UUID;
 @Data
 
 public class ClientAccountDetails {
-    private String Id;
+    private String accountNr;
     private String IBAN;
     private double amount;
     private String registrationDate;
@@ -17,13 +17,16 @@ public class ClientAccountDetails {
 
     private List<Transaction> transactionList = new ArrayList<>();
 
+    private List<CardDetails> cardList;
+
+
     public ClientAccountDetails() {
-        Id = UUID.randomUUID().toString();
+        accountNr = UUID.randomUUID().toString();
 
     }
 
     public ClientAccountDetails(String IBAN, double amount, String registrationDate, String type) {
-        Id = UUID.randomUUID().toString();
+        accountNr = UUID.randomUUID().toString();
         this.IBAN = IBAN;
         this.amount = amount;
         this.registrationDate = registrationDate;

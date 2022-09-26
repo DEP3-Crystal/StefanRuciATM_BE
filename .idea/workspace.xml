@@ -5,36 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a61472-1cd0-4561-9f13-15531578d4a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20220320.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/AtmApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/controller/ATMController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/Clients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/CardDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientAccountDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientContactInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/atm_manager/CardInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/ATMs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/validator/CardValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d.iml" beforeDir="false" afterPath="$PROJECT_DIR$/d.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/controller/ATMController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/controller/ATMController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/dao/Clients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/CardDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/CardDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientAccountDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientContactInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/ClientContactInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/crystal/atm/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/AtmApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/AtmApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/controller/ATMController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/controller/ATMController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/dao/Clients.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/dao/Clients.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/CardDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/CardDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientAccountDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientAccountDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientContactInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/crystal/atm/model/ClientContactInfo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,7 +71,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.test">
     <configuration name="AtmApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.crystal.atm.AtmApp" />
       <module name="d" />
@@ -78,8 +85,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.crystal.atm.test" />
+      <module name="d" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.crystal.atm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.AtmApp" />
       </list>
     </recent_temporary>
