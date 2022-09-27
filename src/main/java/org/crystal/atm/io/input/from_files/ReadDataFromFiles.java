@@ -1,9 +1,10 @@
-package org.crystal.atm.io;
+package org.crystal.atm.io.input.from_files;
 
 import org.crystal.atm.dao.ATMs;
 import org.crystal.atm.dao.Clients;
+import org.crystal.atm.io.input.DataInput;
 
-public class ReadDataFromFiles extends DataInput{
+public class ReadDataFromFiles extends DataInput {
 
     public ReadDataFromFiles(Clients clients , ATMs atmS) {
         super(clients,atmS);
@@ -24,5 +25,6 @@ public class ReadDataFromFiles extends DataInput{
     public void setATMList() {
 
     }
+
 
 }

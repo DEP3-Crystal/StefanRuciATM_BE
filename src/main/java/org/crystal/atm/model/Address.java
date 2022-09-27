@@ -1,9 +1,11 @@
 package org.crystal.atm.model;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 @Data
 public class Address {
+    private  String id;
     private String country;
     private String city;
     private String address;

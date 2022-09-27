@@ -43,10 +43,12 @@ public class AtmApp {
         client1.setFullName("fullName1");
         client1.setSurName("surname1");
         client1.getClientAccountDetailsList().put("TorsosDSP",
-                new ClientAccountDetails("AC000055515201",
+                new ClientAccountDetails(
+                        "ownerID",
+                        "AC000055515201",
                         999999955,
-                        new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date())
-                        , "Debit")
+                        new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()),
+                        "Debit")
         );
         client2.getClientContactInfoList().add(
                 new ClientContactInfo(
@@ -65,7 +67,7 @@ public class AtmApp {
         client2.setName("name1");
         client2.setFullName("fullName1");
         client2.setSurName("surname1");
-        client2.getClientAccountDetailsList().put("s222s2s2d2sad2s", new ClientAccountDetails("AC000055515201", 999999955, formatter.format(date), "Debit"));
+        client2.getClientAccountDetailsList().put("s222s2s2d2sad2s", new ClientAccountDetails("ownerID", "AC000055515201", 999999955, formatter.format(date), "Debit"));
         client2.getClientContactInfoList().add(new ClientContactInfo(new ArrayList<>(List.of("sr@dsd.eu")), new ArrayList<>(List.of("0625554455")), new ArrayList<>(List.of(new Address("al", "dr", "lgj.nr1")))));
         clients.getClientsList().put(client1.getID(), client1);
         clients.getClientsList().put(client2.getID(), client2);

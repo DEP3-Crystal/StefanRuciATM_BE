@@ -1,9 +1,10 @@
-package org.crystal.atm.io;
+package org.crystal.atm.io.input.from_db;
 
 import org.crystal.atm.dao.ATMs;
 import org.crystal.atm.dao.Clients;
+import org.crystal.atm.io.input.DataInput;
 
-public class ReadDataFromDb extends DataInput{
+public class ReadDataFromDb extends DataInput {
     protected ReadDataFromDb(Clients clients, ATMs atmS) {
         super(clients, atmS);
     }
@@ -25,4 +26,5 @@ public class ReadDataFromDb extends DataInput{
     public void setATMList() {
 
     }
+
 }

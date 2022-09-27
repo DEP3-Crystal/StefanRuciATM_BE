@@ -9,6 +9,7 @@ import java.util.UUID;
 @Data
 
 public class ClientAccountDetails {
+    private  String ownerID;
     private String accountNr;
     private String IBAN;
     private double amount;
@@ -25,7 +26,8 @@ public class ClientAccountDetails {
 
     }
 
-    public ClientAccountDetails(String IBAN, double amount, String registrationDate, String type) {
+    public ClientAccountDetails(String ownerID, String IBAN, double amount, String registrationDate, String type) {
+        this.ownerID = ownerID;
         accountNr = UUID.randomUUID().toString();
         this.IBAN = IBAN;
         this.amount = amount;
@@ -33,10 +35,4 @@ public class ClientAccountDetails {
         this.type = type;
     }
 
-    public void withdraw(double sumOfwithdraw) {
-        if (sumOfwithdraw < this.amount) {
-            this.amount -= sumOfwithdraw;
-            System.out.println("transaction Done");
-        }
-    }
 }
