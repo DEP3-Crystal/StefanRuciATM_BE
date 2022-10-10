@@ -1,2 +1,1 @@
-ClientId,AccountNr,
-
+clientId,accountNr,IBAN,amount,registrationDate,swiftCode,type

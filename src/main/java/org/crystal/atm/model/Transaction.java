@@ -8,18 +8,25 @@ import org.joda.time.LocalDateTime;
 public class Transaction {
     private String transNr;
     private String atmNr;
-    private String sender;
-    private String receiver;
-    private String type;
+    private String clientId;
+    private String receiverId;
+    private String clientIBAN;
+    private String receiverIBAN;
     private LocalDateTime dateAndTime;
+    private TransactionTypes type;//types:withdraw,deposit,transfer ,make it an Enum
     private double amount;
 
-    public Transaction(String transNr, String atmNr, String sender, String receiver, String type, double amount) {
+    public Transaction() {
+    }
+
+    public Transaction(String transNr, String atmNr, String clientId, String receiverId, String clientIBAN, String receiverIBAN, LocalDateTime dateAndTime, TransactionTypes type, double amount) {
         this.transNr = transNr;
         this.atmNr = atmNr;
-        this.sender = sender;
-        this.dateAndTime=LocalDateTime.now();
-        this.receiver = receiver;
+        this.clientId = clientId;
+        this.receiverId = receiverId;
+        this.clientIBAN = clientIBAN;
+        this.receiverIBAN = receiverIBAN;
+        this.dateAndTime = dateAndTime;
         this.type = type;
         this.amount = amount;
     }

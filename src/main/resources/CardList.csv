@@ -1,2 +1,1 @@
-ClientId,AccountNr,CardNr,cardPin,validMonth,validYear,cardType
-
+cardNr,cardPin,clientId,accountNr,validMonth,validYear,cardType
